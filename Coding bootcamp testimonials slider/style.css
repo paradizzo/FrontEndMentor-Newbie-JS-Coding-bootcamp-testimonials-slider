@@ -1,0 +1,148 @@
+/****** 375px ******/
+
+/**colors**/
+:root {
+    --DarkBlue: hsl(240, 38%, 20%);
+    --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: hsla(240, 18%, 77%, 0.027);
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position-x: -5ch;
+    background-position-y: 95ch;
+}
+.container {
+    padding: 2ch;
+    padding-top: 10ch;
+}
+.image {
+    width: 30ch;
+    border-radius: 5px;
+    box-shadow: 2px 15px  20px 5px hsla(240, 37%, 20%, 0.212);
+}
+
+/** Caixa de comentário pra colocar o display none na box do homem **/
+#image-man , #title-man , #name-man{
+    display: none;
+}
+/** Fim da caixa de comentário **/
+.image-box {
+    position: relative;
+    text-align: center;
+    background-image: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 40ch;
+    background-position-y: 0;
+    padding-bottom: 5ch;
+    padding-top: 5ch;
+}
+.button-box {
+    position: absolute;
+    top: 33ch;
+    left: 17ch;
+    padding: 1ch 3ch 1ch 3ch;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+}
+.back-button {
+    margin-right: 1ch;
+    position: relative;
+    left: -10px;
+}
+.next-button {
+    position: relative;
+    left: 10px;
+}
+.image-button {
+    width: 10px;
+    margin-top: 4px;
+}
+.text-box {
+    margin: 1ch;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding-bottom: 20ch;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 6ch;
+}
+.title {
+    color:hsla(240, 37%, 20%, 0.788) ;
+    line-height: 2.5ch;
+    margin-bottom: 3ch;
+    padding-top: 2ch ;
+}
+.name {
+    color:hsl(240, 38%, 20%) ;
+    font-weight: bold;
+    line-height: 2.5ch;
+    letter-spacing: 1px;
+}
+.job {
+    color:hsla(240, 37%, 20%, 0.24) ;
+}
+.image {
+    margin: 0;
+    text-align: center;
+}
+
+/**** 1400 px ****/
+
+@media only screen and (min-width: 1400px) {
+    .wraper {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 15ch;
+        padding-top: 15ch ;
+    }
+    .image {
+        width: 65ch;
+    }
+    .text-box {
+        font-size: 28px;
+        position: relative;
+        width: 40ch;
+    }
+    .title-box {
+        width: 40ch;
+        text-align: left;
+        position: absolute;
+        right: -6ch;
+        top: 4ch;
+    }
+    .name-box {
+        position: relative;
+        text-align: left;
+        top: 25ch;
+        right: 1.5ch;
+    }
+    .button-box {
+        top:  72.5ch;
+        left: 20ch;
+    }
+    .image-box {
+        background-size: 80ch;
+        background-position-x: 5ch;
+        background-position-y: 4ch;
+        margin: -10ch;
+        padding: 10ch;
+    }
+    .text-box {
+        background-position-x: 5ch;
+        background-position-y: 3ch;
+        
+    }
+    .container {
+        padding-bottom: 8ch;
+    }
+}

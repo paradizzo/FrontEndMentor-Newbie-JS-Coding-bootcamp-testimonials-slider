@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Coding bootcamp testimonials slider</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="wraper">
+                <div class="image-box">
+                    <img src="images/image-tanya.jpg" alt="" class="image" id="image-woman">
+                    <img src="images/image-john.jpg" alt="" class="image" id="image-man">
+                    <div class="button-box">
+                        <div class="button-wraper">
+                        <a href="#" class="back-button" onclick="GoBack();ImageBack(); NameBack()"><img src="images/icon-prev.svg" alt="" class="image-button" onclick="GoBack2();ImageBack2(); NameBack2()"></a>
+                        <a href="#" class="next-button" onclick="GoFoward(); ImageFoward(); NameFoward()"><img src="images/icon-next.svg" alt="" class="image-button" onclick="GoFoward2(); ImageFoward2(); NameFoward2()"></a></div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="title-box">
+                        <h3 class="title" id="title-woman">“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ” </h3>
+                        <h3 class="title" id="title-man">“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ” </h3>
+                    </div>
+                    <div class="name-box">
+                        <div class="name-div" id="name-woman"><p class="name">Tanya Sinclair <br> <span class="job">UX Engineer</span></p></div>
+                        <div class="name-div" id="name-man"> <p class="name">John Tarkpor Junior <br> <span class="job">Front-end Developer</span></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
